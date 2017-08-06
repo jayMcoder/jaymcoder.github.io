@@ -18,27 +18,27 @@ twitter_username: jaymcoder
 github_username:  jaymcoder
 
 # GEMs
-gems: [jekyll-assets]
+# gems: [jekyll-assets]
 
 # Build settings
 # Global
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "Rakefile"]
 markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
 
 # Assets
-assets:
-  prefix: "/assets"
-  assets:
-    - "*.ttf"
-  sources:
-    - "_assets/fonts"
+# assets:
+#   prefix: "/assets"
+#   assets:
+#     - "*.ttf"
+#   sources:
+#     - "_assets/fonts"
 
 # SASS
 sass:
-  sass_dir: _sass
+  sass_dir: assets/sass
 
 # Plugins
-plugins_dir: [jekyll-assets]
+# plugins_dir: [jekyll-assets]
 
 # Conversion
 markdown: kramdown
@@ -47,3 +47,10 @@ highlighter: rouge
 # Markdown processor
 kramdown:
   input: GFM
+  hard_wrap:      false
+
+# Outputting
+permalink:     date
+
+quiet:    false
+verbose:  false
