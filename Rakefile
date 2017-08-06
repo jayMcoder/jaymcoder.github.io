@@ -13,10 +13,7 @@ task :default => 'site:publish'
 namespace :site do
   desc "Generate blog files"
   task :generate do
-    Jekyll::Site.new(Jekyll.configuration({
-      "source"      => ".",
-      "destination" => "_site"
-    })).process
+    Rake.sh "bundle exec jekyll build"
   end
 
 
