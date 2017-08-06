@@ -1,3 +1,5 @@
 require 'rake-jekyll'
 
-Rake::Jekyll::GitDeployTask.new(:deploy)
+task :default do
+ Rake::Jekyll::GitDeployTask.new(:deploy)
+end
