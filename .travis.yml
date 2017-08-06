@@ -4,3 +4,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: master
+  script: bundle exec rake deploy
