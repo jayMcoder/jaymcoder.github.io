@@ -21,6 +21,10 @@ github_username:  jaymcoder
 gems: [jekyll-assets]
 
 # Build settings
+# Global
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
+
 # Assets
 assets:
   prefix: "/assets"
